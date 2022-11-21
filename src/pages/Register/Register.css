@@ -1,0 +1,39 @@
+.register-input {
+  width: 480px;
+  outline: none;
+
+  padding: 8px;
+
+  margin-top: 16px;
+
+  border: 1px solid lightgray;
+}
+.register-btn-submit {
+  text-align: center;
+  margin-block: 16px;
+}
+.register-btn-submit button {
+  opacity: 0.9;
+
+  background-color: var(--main-color);
+  color: #fff;
+
+  border: none;
+
+  cursor: pointer;
+
+  padding: 12px 24px;
+
+  letter-spacing: 2px;
+
+  font-size: 16px;
+}
+.register-btn-submit button:hover {
+  opacity: 1;
+}
+.register-action-link {
+  margin-top: 8px;
+}
+.register-action-link:hover {
+  text-decoration: underline;
+}

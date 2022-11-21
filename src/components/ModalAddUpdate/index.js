@@ -1,0 +1,16 @@
+export { default as ModalProduct } from "./ModalProduct";
+export { default as ModalColor } from "./ModalColor";
+export { default as ModalProductDetail } from "./ModalProductDetail";
+export { default as ModalSize } from "./ModalSize";
+export { default as ModalGroupProduct } from "./ModalGroupProduct";
+export { default as ModalCategory } from "./ModalCategory";
+export { default as ModalGroupCategory } from "./ModalGroupCategory";
+export { default as ModalUser } from "./ModalUser";
+export { default as ModalDiscount } from "./ModalDiscount";
+export { default as ModalOrder } from "./ModalOrder";
+export { default as ModalRole } from "./ModalRole";
+export { default as ModalProductImage } from "./ModalProductImage";
+export { default as ModalCommentProduct } from "./ModalCommentProduct";
+export { default as ModalCoupon } from "./ModalCoupon";
+export { default as ModalOrderStatus } from "./ModalOrderStatus";
+export { default as ModalRepCommentProduct } from "./ModalRepCommentProduct";

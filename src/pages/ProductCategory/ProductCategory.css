@@ -1,0 +1,211 @@
+/* filter */
+.filter-product {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+.filter-product svg {
+  transform: translateY(1px);
+  font-size: 18px;
+}
+.filter-product-box {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  padding: 20px 40px 20px 20px;
+  background-color: #fcfcfc;
+  border: 1px solid #ccc;
+  z-index: 5;
+  font-size: 12px;
+  width: 660px;
+  max-height: 500px;
+  overflow-y: overlay;
+  border-radius: 2px;
+  cursor: default;
+}
+.filter-product-close {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.filter-product-close:hover {
+  color: #f11;
+}
+.filter-product-material,
+.filter-product-size,
+.filter-product-color,
+.filter-product-result-selected {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.filter-product-result-selected li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 5px;
+  border: 2px solid #000;
+  margin: 2px 0;
+  margin-right: 5px;
+  border-color: var(--main-color);
+  background-color: #d4e9fe;
+}
+.filter-product-result-selected li svg {
+  margin-left: 5px;
+  border-color: var(--main-color);
+}
+.filter-product-material li,
+.filter-product-color li,
+.filter-product-size li {
+  cursor: pointer;
+  padding: 4px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+}
+.filter-product-size li {
+  cursor: pointer;
+  min-width: 40px;
+}
+.filter-product-result-selected li:last-child,
+.filter-product-material li:last-child,
+.filter-product-color li:last-child,
+.filter-product-size li:last-child {
+  margin-right: 0;
+}
+.filter-product-material li,
+.filter-product-color li,
+.filter-product-size li {
+  cursor: pointer;
+  margin: 2px 0;
+  margin-right: 10px;
+}
+.filter-product-material li.active,
+.filter-product-color li.active,
+.filter-product-size li.active {
+  border-color: var(--main-color);
+  background-color: #d4e9fe;
+}
+.filter-product-color-preview {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+}
+.filter-product-price {
+  width: 50%;
+  position: relative;
+}
+.filter-product-price form::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  height: 1px;
+  background-color: gray;
+}
+.filter-product-price form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.filter-product-price form input {
+  outline: none;
+  width: 40px;
+  text-align: right;
+  background-color: #fff;
+  width: 100px;
+  border-radius: 2px;
+  padding: 6px;
+  z-index: 1;
+}
+.filter-product-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Sort */
+.sort-product-wrapper {
+  display: flex;
+  align-items: center;
+}
+.sort-product-select {
+  position: relative;
+  width: 150px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.sort-product-select-value {
+  padding: 5px 2px 5px 6px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+.sort-product-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 1px;
+  width: calc(100% - 2px);
+  z-index: 2;
+  padding: 5px 4px;
+  background-color: #fff;
+  animation: growDown 300ms ease-in-out;
+  transform-origin: top center;
+  box-shadow: 0 0 2px 0px #000;
+}
+.sort-product-dropdown-item {
+  padding: 4px 2px;
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+.sort-product-dropdown-item.sort-active {
+  color: var(--main-color);
+}
+.sort-product-dropdown-item.sort-active svg {
+  display: block;
+}
+.sort-product-dropdown-item svg {
+  font-size: 18px;
+  display: none;
+}
+.sort-product-dropdown-item:hover {
+  color: var(--main-color);
+}
+.sort-product-dropdown-item:hover svg {
+  display: block;
+}
+
+.category-link:hover {
+  text-decoration: underline;
+  color: var(--main-color);
+}
+.sub-category-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+}

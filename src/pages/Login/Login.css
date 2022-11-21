@@ -1,0 +1,37 @@
+.login-input {
+  width: 480px;
+  outline: none;
+
+  padding: 8px;
+
+  border: 1px solid lightgray;
+}
+.login-btn-submit {
+  text-align: center;
+  margin-block: 16px;
+}
+.login-btn-submit button {
+  opacity: 0.9;
+
+  background-color: var(--main-color);
+  color: #fff;
+
+  border: none;
+
+  cursor: pointer;
+
+  padding: 12px 24px;
+
+  letter-spacing: 2px;
+
+  font-size: 16px;
+}
+.login-btn-submit button:hover {
+  opacity: 1;
+}
+.login-action-link {
+  margin-top: 8px;
+}
+.login-action-link:hover {
+  text-decoration: underline;
+}

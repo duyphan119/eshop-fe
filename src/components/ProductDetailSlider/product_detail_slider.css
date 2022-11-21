@@ -1,0 +1,15 @@
+.slick-arrow {
+  z-index: 1;
+  width: 28px;
+  height: 56px;
+  background-color: #1976d2ac !important;
+}
+.slick-arrow::before {
+  opacity: 1;
+}
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 0;
+}

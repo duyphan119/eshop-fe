@@ -1,0 +1,155 @@
+:root {
+  --main-color: #6299fe;
+  --success-color: #43a047;
+  --warning-color: #ffcf33;
+  --main-color-light: #85c0ff;
+  --star-color: #f4d058;
+  --error-color: rgb(225, 29, 29);
+}
+
+.no-result {
+  padding: 10px 0 10px 1px;
+  background-color: #fa7570;
+}
+
+@keyframes sprintLeftRight {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+body {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.link-default:hover {
+  text-decoration: underline;
+  color: var(--main-color);
+}
+
+ul {
+  margin: 0;
+}
+.fz-14 {
+  font-size: 14px !important;
+}
+.three-dot {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.three-dot-1 {
+  -webkit-line-clamp: 1;
+}
+.three-dot-2 {
+  -webkit-line-clamp: 2;
+}
+.three-dot-3 {
+  -webkit-line-clamp: 3;
+}
+.three-dot-4 {
+  -webkit-line-clamp: 4;
+}
+
+.custom-scrollbar-horizontal::-webkit-scrollbar {
+  height: 4px;
+  background-color: rgb(205, 205, 205);
+  border-radius: 5px;
+}
+
+.custom-scrollbar-horizontal::-webkit-scrollbar-thumb {
+  background-color: rgb(138, 138, 138);
+  border-radius: 5px;
+}
+
+.custom-scrollbar-horizontal::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  background-color: rgb(205, 205, 205);
+  border-radius: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgb(138, 138, 138);
+  border-radius: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+.size-stuck {
+  position: relative;
+  overflow: hidden;
+  cursor: default !important;
+}
+.size-stuck::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 1px;
+  width: 200%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #000;
+}
+
+.size-stuck::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 1px;
+  width: 200%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: #000;
+}
+.hover-color-main-color:hover {
+  color: var(--main-color) !important;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.ag-header {
+  background-color: var(--main-color) !important;
+}
+.styles_scroll-to-top__2A70v {
+  z-index: 1301;
+}
+
+.form-group label {
+  display: block;
+  font-size: 12px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 4px 2px;
+  border: 2px solid gray;
+  border-radius: 2px;
+  outline: none;
+  margin-top: 2px;
+  font-size: 12px;
+  color: gray;
+}
+.form-group-checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}

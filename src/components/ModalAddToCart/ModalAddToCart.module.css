@@ -1,0 +1,138 @@
+.avatar {
+  object-fit: cover;
+  max-height: 70vh;
+}
+.name {
+  font-size: 26px;
+  text-transform: uppercase;
+}
+.rate {
+  display: flex;
+  align-items: center;
+}
+.price-wrapper {
+  display: flex;
+  margin-top: 8px;
+}
+.new-price,
+.price {
+  font-size: 18px;
+  color: red;
+  margin-right: 8px;
+}
+
+.old-price {
+  color: gray;
+  text-decoration: line-through;
+}
+.color-preview-item {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  margin-right: 4px;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3px;
+  position: relative;
+}
+.color-preview-item.active {
+  border: 2px solid var(--main-color);
+}
+.color-preview-item.size-stuck {
+  border: 2px solid transparent;
+}
+.btn-group {
+  display: flex;
+  margin-top: 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  justify-content: space-between;
+}
+.btn-group button {
+  flex: 1;
+  background-color: #fff;
+  padding-block: 8px;
+  border: 2px solid red;
+  border-radius: 0;
+  color: red;
+  cursor: pointer;
+  font-size: 18px;
+}
+.size-preview-item {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  border: 1px solid #000;
+  user-select: none;
+  margin-right: 4px;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  position: relative;
+}
+.size-stuck {
+  cursor: default;
+  overflow: hidden;
+}
+.size-preview-item.active {
+  border: 1px solid var(--main-color);
+  background-color: var(--main-color);
+}
+.size-stuck::before,
+.size-stuck::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 200%;
+  background-color: #000;
+}
+.size-stuck::before {
+  transform: translateX(-25%) rotate(45deg);
+}
+.size-stuck::after {
+  transform: translateX(-25%) rotate(-45deg);
+}
+.quantity-wrapper {
+  width: 72px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+.quantity-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #000;
+  height: 32px;
+}
+.quantity-btn-wrapper button {
+  width: 24px;
+  height: 16px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+}
+.quantity-wrapper button:first-child {
+  border-bottom: 0.5px solid #000;
+}
+.quantity-wrapper button:last-child {
+  border-top: 0.5px solid #000;
+}
+.quantity-wrapper input {
+  width: 48px;
+  border: none;
+  outline: none;
+  text-align: center;
+}

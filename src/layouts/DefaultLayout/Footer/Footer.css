@@ -1,0 +1,25 @@
+.footer-phone-contact {
+  color: #ef9608;
+}
+.footer-email-contact {
+  font-size: 10px;
+}
+.footer-about-title {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.footer-about-link {
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  margin-top: 8px;
+}
+.footer-about-link:hover {
+  text-decoration: underline;
+  color: #fff;
+  text-decoration-color: var(--main-color);
+}
+.footer-about-link.focus {
+  color: #33ccff;
+}
